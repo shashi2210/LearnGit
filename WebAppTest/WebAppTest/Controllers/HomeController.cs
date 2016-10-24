@@ -26,5 +26,12 @@ namespace WebAppTest.Controllers
 
             return View();
         }
+
+        public ActionResult Shashi()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
