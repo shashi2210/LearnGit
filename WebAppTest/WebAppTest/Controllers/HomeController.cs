@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace WebAppTest.Controllers
 {
@@ -21,6 +22,13 @@ namespace WebAppTest.Controllers
         }
 
         public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Gopal()
         {
             ViewBag.Message = "Your contact page.";
 
